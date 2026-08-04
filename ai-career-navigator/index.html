@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Career Navigator — Discover Your Tech Career Path</title>
+  <meta name="description" content="AI Career Navigator helps students discover the right tech career path based on their interests — with skill roadmaps, curated resources, and expert guidance." />
+  <link rel="stylesheet" href="style.css" />
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#home" class="nav-logo">
+        <div class="logo-icon">🧭</div>
+        CareerAI
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#careers">Career Paths</a></li>
+          <li><a href="#roadmaps">Skill Roadmaps</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          ✨ Powered by AI Guidance
+        </div>
+        <h1 class="hero-title">
+          Discover Your<br />
+          <span class="gradient-text">Dream Career</span><br />
+          in Tech
+        </h1>
+        <p class="hero-subtitle">
+          Not sure which tech path to take? AI Career Navigator maps your interests to the best-fit career, shows you the exact skills to learn, and gives you the resources to get there.
+        </p>
+        <div class="hero-buttons">
+          <a href="#careers" class="btn btn-primary" id="explore-btn">
+            🚀 Explore Career Paths
+          </a>
+          <a href="#quiz" class="btn btn-outline" id="quiz-btn">
+            🗺️ Test YourSelf
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="fade-in">
+        <p class="section-label">Who we are</p>
+        <h2 class="section-title">About <span class="gradient-text">AI Career Navigator</span></h2>
+        <p class="section-subtitle">
+          AI Career Navigator empowers students to explore tech career pathways with AI‑driven guidance,
+          curated skill roadmaps, and resources. Our mission is to demystify tech careers and help
+          learners find the right path based on their interests and strengths.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CAREER PATHS ===== -->
+  <section id="careers" class="section">
+    <div class="container">
+      <div class="fade-in">
+        <p class="section-label">What can you become?</p>
+        <h2 class="section-title">Explore <span class="gradient-text">Career Paths</span></h2>
+        <p class="section-subtitle">
+          From data analysis to cutting-edge AI research — find the role that excites you and matches your strengths.
+        </p>
+      </div>
+
+      <div class="career-grid">
+
+        <div class="career-card fade-in" id="career-data-scientist">
+          <div class="card-icon purple">🤖</div>
+          <h3>Data Scientist</h3>
+          <p>Uncover hidden patterns in data and build predictive models to drive business decisions using statistics and machine learning.</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+            <span class="card-tag intermediate">Intermediate</span>
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">ML</span>
+            <span class="skill-pill">Statistics</span>
+          </div>
+        </div>
+
+        <div class="career-card fade-in" id="career-ml-engineer">
+          <div class="card-icon cyan">⚙️</div>
+          <h3>ML Engineer</h3>
+          <p>Design and deploy scalable machine learning systems in production — bridging the gap between data science and software engineering.</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+            <span class="card-tag advanced">Advanced</span>
+            <span class="skill-pill">PyTorch</span>
+            <span class="skill-pill">MLOps</span>
+            <span class="skill-pill">Docker</span>
+          </div>
+        </div>
+
+        <div class="career-card fade-in" id="career-data-analyst">
+          <div class="card-icon green">📊</div>
+          <h3>Data Analyst</h3>
+          <p>Transform raw data into clear, actionable insights using visualization, SQL, and storytelling to guide organizational strategy.</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+            <span class="card-tag beginner">Beginner Friendly</span>
+            <span class="skill-pill">SQL</span>
+            <span class="skill-pill">Excel</span>
+            <span class="skill-pill">Tableau</span>
+          </div>
+        </div>
+
+        <div class="career-card fade-in" id="career-ai-researcher">
+          <div class="card-icon pink">🔬</div>
+          <h3>AI Researcher</h3>
+          <p>Push the boundaries of artificial intelligence by developing novel algorithms, architectures, and publishing research papers.</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+            <span class="card-tag advanced">Advanced</span>
+            <span class="skill-pill">Deep Learning</span>
+            <span class="skill-pill">Math</span>
+            <span class="skill-pill">Papers</span>
+          </div>
+        </div>
+
+        <div class="career-card fade-in" id="career-nlp">
+          <div class="card-icon orange">💬</div>
+          <h3>NLP Specialist</h3>
+          <p>Build systems that understand human language — from chatbots and sentiment analysis to large language models and translation.</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+            <span class="card-tag intermediate">Intermediate</span>
+            <span class="skill-pill">Transformers</span>
+            <span class="skill-pill">NLTK</span>
+            <span class="skill-pill">LLMs</span>
+          </div>
+        </div>
+
+        <div class="career-card fade-in" id="career-mlops">
+            <div class="card-icon blue">🚢</div>
+            <h3>MLOps Engineer</h3>
+            <p>Automate and operationalize ML pipelines — managing model versioning, monitoring, CI/CD, and cloud infrastructure at scale.</p>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+              <span class="card-tag intermediate">Intermediate</span>
+              <span class="skill-pill">Kubernetes</span>
+              <span class="skill-pill">Airflow</span>
+              <span class="skill-pill">AWS</span>
+            </div>
+          </div>
+
+          <!-- New career cards -->
+          <div class="career-card fade-in" id="career-data-engineer">
+            <div class="card-icon teal">⚙️</div>
+            <h3>Data Engineer</h3>
+            <p>Design, build, and maintain scalable data pipelines and warehouses to enable analytics and machine learning.</p>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+              <span class="card-tag advanced">Advanced</span>
+              <span class="skill-pill">SQL</span>
+              <span class="skill-pill">Spark</span>
+              <span class="skill-pill">Airflow</span>
+            </div>
+          </div>
+          <div class="career-card fade-in" id="career-computer-vision">
+            <div class="card-icon violet">📸</div>
+            <h3>Computer Vision Engineer</h3>
+            <p>Develop image and video processing algorithms, from object detection to 3D reconstruction.</p>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+              <span class="card-tag advanced">Advanced</span>
+              <span class="skill-pill">OpenCV</span>
+              <span class="skill-pill">TensorFlow</span>
+              <span class="skill-pill">PyTorch</span>
+            </div>
+          </div>
+          <div class="career-card fade-in" id="career-ai-product-manager">
+            <div class="card-icon amber">🛠️</div>
+            <h3>AI Product Manager</h3>
+            <p>Bridge AI technology and product strategy, defining roadmaps and translating user needs into AI solutions.</p>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+              <span class="card-tag intermediate">Intermediate</span>
+              <span class="skill-pill">Product Strategy</span>
+              <span class="skill-pill">User Research</span>
+              <span class="skill-pill">AI Ethics</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="section" style="background:var(--bg-primary);">
+    <div class="container">
+      <div class="fade-in">
+        <p class="section-label">Who we are</p>
+        <h2 class="section-title">About <span class="gradient-text">CareerAI</span></h2>
+        <p class="section-subtitle">CareerAI helps you navigate the tech career landscape with AI‑powered guidance, curated roadmaps, and personalized resources.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILL ROADMAPS ===== -->
+  <section id="roadmaps" class="section" style="background:var(--bg-secondary);">
+    <div class="container">
+      <div class="fade-in">
+        <p class="section-label">Step-by-step learning</p>
+        <h2 class="section-title">Skill <span class="gradient-text">Roadmaps</span></h2>
+        <p class="section-subtitle">
+          A structured, stage-by-stage learning path for each career. Pick your path and start building.
+        </p>
+      </div>
+
+      <div class="roadmap-tabs fade-in">
+        <button class="roadmap-tab active" data-tab="ds" id="tab-ds">🤖 Data Scientist</button>
+        <button class="roadmap-tab" data-tab="mle" id="tab-mle">⚙️ ML Engineer</button>
+        <button class="roadmap-tab" data-tab="da" id="tab-da">📊 Data Analyst</button>
+        <button class="roadmap-tab" data-tab="nlp" id="tab-nlp">💬 NLP Specialist</button>
+        <button class="roadmap-tab" data-tab="mlops" id="tab-mlops">🚢 MLOps Engineer</button>
+          <button class="roadmap-tab" data-tab="data-engineer" id="tab-data-engineer">⚙️ Data Engineer</button>
+          <button class="roadmap-tab" data-tab="computer-vision" id="tab-computer-vision">📸 Computer Vision Engineer</button>
+          <button class="roadmap-tab" data-tab="ai-pm" id="tab-ai-pm">🛠️ AI Product Manager</button>
+      </div>
+
+      <!-- Data Scientist Roadmap -->
+      <div class="roadmap-content active fade-in" id="roadmap-ds">
+        <div class="roadmap-timeline">
+          <div class="roadmap-step">
+            <h4>Stage 1 — Foundations</h4>
+            <p>Build the mathematical and programming base required for data science.</p>
+            <div class="skill-pills">
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">Linear Algebra</span>
+              <span class="skill-pill">Statistics</span>
+              <span class="skill-pill">Probability</span>
+              <span class="skill-pill">NumPy</span>
+              <span class="skill-pill">Pandas</span>
+            </div>
+          </div>
+          <div class="roadmap-step">
+            <h4>Stage 2 — Data Wrangling & Visualization</h4>
+            <p>Learn to clean, explore, and visualize datasets to find meaningful patterns.</p>
+            <div class="skill-pills">
+              <span class="skill-pill">Matplotlib</span>
+              <span class="skill-pill">Seaborn</span>
+              <span class="skill-pill">Plotly</span>
+              <span class="skill-pill">SQL</span>
+              <span class="skill-pill">Data Cleaning</span>
+              <span class="skill-pill">EDA</span>
+            </div>
+          </div>
+          <div class="roadmap-step">
+            <h4>Stage 3 — Machine Learning</h4>
+            <p>Understand and implement core ML algorithms for classification, regression, and clustering.</p>
+            <div class="skill-pills">
+              <span class="skill-pill">Scikit-learn</span>
+              <span class="skill-pill">Regression</span>
+              <span class="skill-pill">Classification</span>
+              <span class="skill-pill">Clustering</span>
+              <span class="skill-pill">Cross-Validation</span>
+            </div>
+          </div>
+          <div class="roadmap-step">
+            <h4>Stage 4 — Advanced & Specialization</h4>
+            <p>Deep dive into advanced ML, build end-to-end projects, and deploy models.</p>
+            <div class="skill-pills">
+              <span class="skill-pill">Deep Learning</span>
+              <span class="skill-pill">TensorFlow / PyTorch</span>
+              <span class="skill-pill">Feature Engineering</span>
+              <span class="skill-pill">Model Deployment</span>
+              <span class="skill-pill">Kaggle</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ML Engineer Roadmap -->
+      <div class="roadmap-content" id="roadmap-mle">
+        <div class="roadmap-timeline">
+          <div class="roadmap-step">
+            <h4>Stage 1 — Software Engineering Basics</h4>
+            <p>Strong programming and software design fundamentals are crucial for an MLE.</p>
+            <div class="skill-pills">
+              <span class="skill-pill">Python / C++</span>
+              <span class="skill-pill">Data Structures</span>
+              <span class="skill-pill">Algorithms</span>
+              <span class="skill-pill">OOP</span>
+              <span class="skill-pill">Git</span>
+            </div>
+          </div>
+          <div class="roadmap-step">
+            <h4>Stage 2 — ML Fundamentals</h4>
+            <p>Understand how ML models work so you can build and optimize them effectively.</p>
+            <div class="skill-pills">
+              <span class="skill-pill">Scikit-learn</span>
+              <span class="skill-pill">PyTorch</span>
+              <span class="skill-pill">Neural Networks</span>
+              <span class="skill-pill">Model Optimization</span>
+            </div>
+          </div>
+          <div class="roadmap-step">
+            <h4>Stage 3 — Production Systems</h4>
+            <p>Build scalable, production-ready ML systems with proper tooling and infrastructure.</p>
+            <div class="skill-pills">
+              <span class="skill-pill">Docker</span>
+              <span class="skill-pill">REST APIs</span>
+              <span class="skill-pill">FastAPI</span>
+              <span class="skill-pill">Cloud (AWS/GCP)</span>
+              <span class="skill-pill">CI/CD</span>
+            </div>
+          </div>
+          <div class="roadmap-step">
+            <h4>Stage 4 — Scale & MLOps</h4>
+            <p>Operate ML systems reliably at scale with monitoring, retraining, and automation.</p>
+            <div class="skill-pills">
+              <span class="skill-pill">Kubernetes</span>
+              <span class="skill-pill">MLflow</span>
+              <span class="skill-pill">Model Monitoring</span>
+              <span class="skill-pill">Feature Stores</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Data Analyst Roadmap -->
+       <div class="roadmap-content" id="roadmap-da">
+         <div class="roadmap-timeline">
+         </div>
+       </div>
+
+       <!-- Data Engineer Roadmap -->
+       <div class="roadmap-content" id="roadmap-data-engineer">
+         <div class="roadmap-timeline">
+           <div class="roadmap-step">
+             <h4>Stage 1 — Foundations</h4>
+             <p>Learn SQL, data modeling, and ETL concepts.</p>
+             <div class="skill-pills">
+               <span class="skill-pill">SQL</span>
+               <span class="skill-pill">Data Modeling</span>
+               <span class="skill-pill">ETL</span>
+             </div>
+           </div>
+           <div class="roadmap-step">
+             <h4>Stage 2 — Scalable Pipelines</h4>
+             <p>Build data pipelines using Spark, Airflow, and cloud services.</p>
+             <div class="skill-pills">
+               <span class="skill-pill">Spark</span>
+               <span class="skill-pill">Airflow</span>
+               <span class="skill-pill">AWS/GCP</span>
+             </div>
+           </div>
+         <div class="roadmap-step">
+  <h4>Stage 3 — Data Warehousing &amp; Modeling</h4>
+  <p>Design dimensional models, star schemas, and work with modern data warehouses.</p>
+  <div class="skill-pills">
+    <span class="skill-pill">Snowflake</span>
+    <span class="skill-pill">Redshift</span>
+    <span class="skill-pill">Dimensional Modeling</span>
+  </div>
+</div>
+<div class="roadmap-step">
+  <h4>Stage 4 — Production &amp; Monitoring</h4>
+  <p>Deploy pipelines to production, set up monitoring, alerts and CI/CD for data workflows.</p>
+  <div class="skill-pills">
+    <span class="skill-pill">Airflow Monitoring</span>
+    <span class="skill-pill">Data Quality</span>
+    <span class="skill-pill">CI/CD</span>
+  </div>
+</div>
+</div>
+       </div>
+
+       <!-- Computer Vision Engineer Roadmap -->
+       <div class="roadmap-content" id="roadmap-computer-vision">
+         <div class="roadmap-timeline">
+           <div class="roadmap-step">
+             <h4>Stage 1 — Image Basics</h4>
+             <p>Fundamentals of image processing, OpenCV, and computer vision theory.</p>
+             <div class="skill-pills">
+               <span class="skill-pill">OpenCV</span>
+               <span class="skill-pill">Python</span>
+             </div>
+           </div>
+           <div class="roadmap-step">
+             <h4>Stage 2 — Deep Learning for Vision</h4>
+             <p>Convolutional networks, object detection, and segmentation using TensorFlow/PyTorch.</p>
+             <div class="skill-pills">
+               <span class="skill-pill">TensorFlow</span>
+               <span class="skill-pill">PyTorch</span>
+             </div>
+           </div>
+         <div class="roadmap-step">
+  <h4>Stage 3 — Advanced Vision Techniques</h4>
+  <p>Explore GANs, 3D vision, and transfer learning for cutting‑edge computer‑vision applications.</p>
+  <div class="skill-pills">
+    <span class="skill-pill">GANs</span>
+    <span class="skill-pill">3D Vision</span>
+    <span class="skill-pill">Transfer Learning</span>
+  </div>
+</div>
+<div class="roadmap-step">
+  <h4>Stage 4 — Deployment &amp; Optimization</h4>
+  <p>Deploy models to edge devices, optimize inference with quantization and TensorRT.</p>
+  <div class="skill-pills">
+    <span class="skill-pill">Edge Deployment</span>
+    <span class="skill-pill">Model Quantization</span>
+    <span class="skill-pill">TensorRT</span>
+  </div>
+</div>
+</div>
+       </div>
+
+       <!-- AI Product Manager Roadmap -->
+       <div class="roadmap-content" id="roadmap-ai-pm">
+         <div class="roadmap-timeline">
+           <div class="roadmap-step">
+             <h4>Stage 1 — Foundations</h4>
+             <p>Product management fundamentals, AI basics, and market research.</p>
+             <div class="skill-pills">
+               <span class="skill-pill">Product Strategy</span>
+               <span class="skill-pill">User Research</span>
+               <span class="skill-pill">AI Ethics</span>
+             </div>
+           </div>
+           <div class="roadmap-step">
+             <h4>Stage 2 — AI Product Development</h4>
+             <p>Define AI product requirements, work with engineers, and launch MVPs.</p>
+             <div class="skill-pills">
+               <span class="skill-pill">Roadmapping</span>
+               <span class="skill-pill">MVP Design</span>
+               <span class="skill-pill">Stakeholder Management</span>
+             </div>
+           </div>
+         <div class="roadmap-step">
+  <h4>Stage 3 — Go‑to‑Market &amp; Scaling</h4>
+  <p>Plan product launches, define success metrics, and drive growth for AI products.</p>
+  <div class="skill-pills">
+    <span class="skill-pill">Product Launch</span>
+    <span class="skill-pill">Metrics</span>
+    <span class="skill-pill">Growth Hacking</span>
+  </div>
+</div>
+<div class="roadmap-step">
+  <h4>Stage 4 — Leadership &amp; Strategy</h4>
+  <p>Shape long‑term AI strategy, align stakeholders, and lead cross‑functional teams.</p>
+  <div class="skill-pills">
+    <span class="skill-pill">Roadmap Planning</span>
+    <span class="skill-pill">Stakeholder Alignment</span>
+    <span class="skill-pill">Leadership</span>
+  </div>
+</div>
+</div>
+       </div>
+
+       <!-- Data Analyst Roadmap -->
+       <div class="roadmap-content" id="roadmap-da">
+         <div class="roadmap-timeline">
+          <div class="roadmap-step">
+            <h4>Stage 1 — Spreadsheets & SQL</h4>
+            <p>Master the tools that every data analyst uses daily.</p>
+            <div class="skill-pills">
+              <span class="skill-pill">Excel</span>
+              <span class="skill-pill">Google Sheets</span>
+              <span class="skill-pill">SQL Basics</span>
+              <span class="skill-pill">Joins & Aggregations</span>
+            </div>
+          </div>
+          <div class="roadmap-step">
+            <h4>Stage 2 — Data Visualization</h4>
+            <p>Create compelling dashboards and visual stories from data.</p>
+            <div class="skill-pills">
+              <span class="skill-pill">Tableau</span>
+              <span class="skill-pill">Power BI</span>
+              <span class="skill-pill">Looker</span>
+              <span class="skill-pill">Chart Design</span>
+            </div>
+          </div>
+          <div class="roadmap-step">
+            <h4>Stage 3 — Python for Analysis</h4>
+            <p>Automate analysis and handle larger datasets with Python.</p>
+            <div class="skill-pills">
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">Pandas</span>
+              <span class="skill-pill">Matplotlib</span>
+              <span class="skill-pill">Jupyter</span>
+            </div>
+          </div>
+          <div class="roadmap-step">
+            <h4>Stage 4 — Business Acumen</h4>
+            <p>Translate technical findings into business insights and recommendations.</p>
+            <div class="skill-pills">
+              <span class="skill-pill">A/B Testing</span>
+              <span class="skill-pill">KPIs & Metrics</span>
+              <span class="skill-pill">Storytelling</span>
+              <span class="skill-pill">Stakeholder Comms</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NLP Roadmap -->
+      <div class="roadmap-content" id="roadmap-nlp">
+        <div class="roadmap-timeline">
+          <div class="roadmap-step">
+            <h4>Stage 1 — Python & ML Basics</h4>
+            <p>Strong Python and core ML knowledge are prerequisites for NLP.</p>
+            <div class="skill-pills">
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">Scikit-learn</span>
+              <span class="skill-pill">Regex</span>
+              <span class="skill-pill">Pandas</span>
+            </div>
+          </div>
+          <div class="roadmap-step">
+            <h4>Stage 2 — Classic NLP</h4>
+            <p>Learn traditional NLP techniques for text processing and feature extraction.</p>
+            <div class="skill-pills">
+              <span class="skill-pill">NLTK</span>
+              <span class="skill-pill">spaCy</span>
+              <span class="skill-pill">TF-IDF</span>
+              <span class="skill-pill">Word2Vec</span>
+              <span class="skill-pill">Tokenization</span>
+            </div>
+          </div>
+          <div class="roadmap-step">
+            <h4>Stage 3 — Deep Learning for NLP</h4>
+            <p>Understand modern neural architectures that power today's AI language systems.</p>
+            <div class="skill-pills">
+              <span class="skill-pill">RNNs / LSTMs</span>
+              <span class="skill-pill">Attention</span>
+              <span class="skill-pill">Transformers</span>
+              <span class="skill-pill">BERT / GPT</span>
+            </div>
+          </div>
+          <div class="roadmap-step">
+            <h4>Stage 4 — LLMs & Applications</h4>
+            <p>Build real-world applications using state-of-the-art large language models.</p>
+            <div class="skill-pills">
+              <span class="skill-pill">Hugging Face</span>
+              <span class="skill-pill">RAG</span>
+              <span class="skill-pill">Fine-tuning</span>
+              <span class="skill-pill">LangChain</span>
+              <span class="skill-pill">Prompt Engineering</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MLOps Roadmap -->
+      <div class="roadmap-content" id="roadmap-mlops">
+        <div class="roadmap-timeline">
+          <div class="roadmap-step">
+            <h4>Stage 1 — Dev & Linux Basics</h4>
+            <p>Be comfortable on the command line and with version control.</p>
+            <div class="skill-pills">
+              <span class="skill-pill">Linux CLI</span>
+              <span class="skill-pill">Git / GitHub</span>
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">Bash Scripting</span>
+            </div>
+          </div>
+          <div class="roadmap-step">
+            <h4>Stage 2 — Containerization & CI/CD</h4>
+            <p>Package applications reliably and automate testing and deployment pipelines.</p>
+            <div class="skill-pills">
+              <span class="skill-pill">Docker</span>
+              <span class="skill-pill">GitHub Actions</span>
+              <span class="skill-pill">Jenkins</span>
+              <span class="skill-pill">Unit Testing</span>
+            </div>
+          </div>
+          <div class="roadmap-step">
+            <h4>Stage 3 — Cloud & Orchestration</h4>
+            <p>Deploy and manage ML workloads on cloud platforms at scale.</p>
+            <div class="skill-pills">
+              <span class="skill-pill">AWS / GCP / Azure</span>
+              <span class="skill-pill">Kubernetes</span>
+              <span class="skill-pill">Terraform</span>
+              <span class="skill-pill">Airflow</span>
+            </div>
+          </div>
+          <div class="roadmap-step">
+            <h4>Stage 4 — ML Pipeline Tooling</h4>
+            <p>Use dedicated MLOps tools for experiment tracking, model registry, and monitoring.</p>
+            <div class="skill-pills">
+              <span class="skill-pill">MLflow</span>
+              <span class="skill-pill">Kubeflow</span>
+              <span class="skill-pill">Weights & Biases</span>
+              <span class="skill-pill">Evidently AI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== RESOURCES ===== -->
+  <section id="resources" class="section">
+    <div class="container">
+      <div class="fade-in">
+        <p class="section-label">Level up your learning</p>
+        <h2 class="section-title">Curated <span class="gradient-text">Resources</span></h2>
+        <p class="section-subtitle">
+          Hand-picked courses, books, communities, and tools to accelerate your learning journey.
+        </p>
+      </div>
+
+      <div class="resources-grid">
+
+        <div class="resource-card fade-in" id="resource-coursera">
+          <p class="resource-category">📚 Online Course</p>
+          <h3>Machine Learning Specialization</h3>
+          <p>Andrew Ng's foundational ML course — the perfect starting point for anyone entering AI/ML.</p>
+          <a href="https://www.coursera.org/specializations/machine-learning-introduction" class="resource-link" target="_blank">
+            Visit Coursera →
+          </a>
+        </div>
+
+        <div class="resource-card fade-in" id="resource-fastai">
+          <p class="resource-category">🎓 Free Course</p>
+          <h3>fast.ai — Practical Deep Learning</h3>
+          <p>Top-down, hands-on deep learning course that gets you building real models from day one.</p>
+          <a href="https://www.fast.ai" class="resource-link" target="_blank">
+            Visit fast.ai →
+          </a>
+        </div>
+
+        <div class="resource-card fade-in" id="resource-kaggle">
+          <p class="resource-category">🏆 Practice Platform</p>
+          <h3>Kaggle Competitions</h3>
+          <p>Learn data science through real competitions. Build your portfolio and benchmark your skills globally.</p>
+          <a href="https://www.kaggle.com" class="resource-link" target="_blank">
+            Join Kaggle →
+          </a>
+        </div>
+
+        <div class="resource-card fade-in" id="resource-hf">
+          <p class="resource-category">🤗 NLP & LLMs</p>
+          <h3>Hugging Face Course</h3>
+          <p>The definitive free course on Transformers, NLP, and using state-of-the-art pretrained models.</p>
+          <a href="https://huggingface.co/learn" class="resource-link" target="_blank">
+            Start Learning →
+          </a>
+        </div>
+
+        <div class="resource-card fade-in" id="resource-arxiv">
+          <p class="resource-category">📄 Research Papers</p>
+          <h3>arXiv — AI / CS Papers</h3>
+          <p>Stay ahead of the field by reading the latest research papers in ML, AI, and computer science.</p>
+          <a href="https://arxiv.org/list/cs.LG/recent" class="resource-link" target="_blank">
+            Read Papers →
+          </a>
+        </div>
+
+        <div class="resource-card fade-in" id="resource-roadmap">
+          <p class="resource-category">🗺️ Visual Roadmaps</p>
+          <h3>roadmap.sh — Developer Paths</h3>
+          <p>Community-curated visual roadmaps for every major tech role — from frontend to AI engineer.</p>
+          <a href="https://roadmap.sh" class="resource-link" target="_blank">
+            Explore Roadmaps →
+          </a>
+        </div>
+
+        <div class="resource-card fade-in" id="resource-statquest">
+          <p class="resource-category">🎬 YouTube Channel</p>
+          <h3>StatQuest with Josh Starmer</h3>
+          <p>Brilliant visual explanations of statistics, ML, and deep learning concepts — no jargon, just clarity.</p>
+          <a href="https://www.youtube.com/@statquest" class="resource-link" target="_blank">
+            Watch Now →
+          </a>
+        </div>
+
+        <div class="resource-card fade-in" id="resource-community">
+          <p class="resource-category">💬 Community</p>
+          <h3>r/MachineLearning</h3>
+          <p>One of the largest and most active ML communities online — for news, papers, career advice, and discussion.</p>
+          <a href="https://www.reddit.com/r/MachineLearning/" class="resource-link" target="_blank">
+            Join Community →
+          </a>
+        </div>
+
+          <div class="resource-card fade-in" id="resource-data-engineer">
+            <p class="resource-category">📚 Online Course</p>
+            <h3>Data Engineering on Google Cloud</h3>
+            <p>Learn to design, build, and maintain scalable data pipelines using BigQuery, Dataflow, and Cloud Composer.</p>
+            <a href="https://www.coursera.org/learn/gcp-data-engineering" class="resource-link" target="_blank">
+              Enroll →
+            </a>
+          </div>
+          <div class="resource-card fade-in" id="resource-computer-vision">
+            <p class="resource-category">📚 Online Course</p>
+            <h3>Computer Vision with Deep Learning</h3>
+            <p>Master image classification, object detection, and segmentation with TensorFlow and PyTorch.</p>
+            <a href="https://www.coursera.org/learn/computer-vision-deep-learning" class="resource-link" target="_blank">
+              Enroll →
+            </a>
+          </div>
+          <div class="resource-card fade-in" id="resource-ai-pm">
+            <p class="resource-category">📚 Book</p>
+            <h3>AI Product Management</h3>
+            <p>A practical guide to building AI‑powered products, covering strategy, ethics, and go‑to‑market.</p>
+            <a href="https://www.oreilly.com/library/view/ai-product-management/9781492074370/" class="resource-link" target="_blank">
+              View Book →
+            </a>
+          </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== QUIZ SECTION ===== -->
+  <section id="quiz" class="section">
+    <div class="container">
+      <div class="fade-in">
+        <p class="section-label">Discover Your Path</p>
+        <h2 class="section-title">Career <span class="gradient-text">Assessment Quiz</span></h2>
+        <p class="section-subtitle">
+          Take our 10-question interactive quiz to find out which AI/Data career best matches your interests and strengths.
+        </p>
+      </div>
+      
+      <div class="quiz-container fade-in" id="quiz-container">
+        <!-- Start Screen -->
+        <div id="quiz-start" class="quiz-step active">
+          <h3>Ready to find your dream tech role?</h3>
+          <p>No prior technical knowledge required. Just answer honestly based on what you enjoy doing.</p>
+          <button class="btn btn-primary mt-4" id="start-quiz-btn">Start Quiz</button>
+        </div>
+
+        <!-- Active Quiz Screen -->
+        <div id="quiz-active" class="quiz-step" style="display: none;">
+          <div class="quiz-progress-bar">
+            <div class="quiz-progress-fill" id="quiz-progress-fill"></div>
+          </div>
+          <p class="quiz-progress-text" id="quiz-progress-text">Question 1 of 10</p>
+          <h3 class="quiz-question" id="quiz-question-text"></h3>
+          <div class="quiz-options" id="quiz-options-container">
+            <!-- Options injected by JS -->
+          </div>
+        </div>
+
+        <!-- Results Screen -->
+        <div id="quiz-result" class="quiz-step" style="display: none;">
+          <h3 class="quiz-result-title">Your Best Fit: <span id="result-role-title" class="gradient-text"></span></h3>
+          <p class="quiz-match">Match Score: <span id="result-match-score"></span>%</p>
+          <p class="quiz-description" id="result-description"></p>
+          
+          <div class="quiz-result-grid">
+            <div class="result-box">
+              <h4>Key Strengths</h4>
+              <ul id="result-strengths"></ul>
+            </div>
+            <div class="result-box">
+              <h4>Skills to Learn</h4>
+              <ul id="result-skills"></ul>
+            </div>
+            <div class="result-box">
+              <h4>Tools</h4>
+              <ul id="result-tools"></ul>
+            </div>
+            <div class="result-box">
+              <h4>Future Opportunities</h4>
+              <p id="result-future"></p>
+            </div>
+          </div>
+          
+          <div class="result-roadmap">
+            <h4>Recommended Roadmap</h4>
+            <ul id="result-roadmap"></ul>
+          </div>
+          
+          <div class="result-projects">
+            <h4>Beginner Projects to Try</h4>
+            <ul id="result-projects"></ul>
+          </div>
+
+          <button class="btn btn-outline mt-4" id="restart-quiz-btn">Retake Quiz</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section" style="background:var(--bg-secondary);">
+    <div class="container">
+      <div class="fade-in">
+        <p class="section-label">Get in touch</p>
+        <h2 class="section-title">Have <span class="gradient-text">Questions?</span></h2>
+        <p class="section-subtitle">
+          Reach out for guidance on choosing your career path, learning resources, or anything else.
+        </p>
+      </div>
+
+      <div class="contact-wrapper">
+        <div class="contact-info fade-in">
+          <h3>We're here to help you navigate your future.</h3>
+          <p>
+            Choosing a career in tech can feel overwhelming. We're here to break it down, answer your questions, and point you in the right direction — no judgment, no jargon.
+          </p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="icon">📩</div>
+              <a href="mailto:kamesh552024@gmail.com" class="contact-link">Mail: kamesh552024@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <div class="icon">🗃️</div>
+              <a href="https://horizonofkameshofficialportfolio.vercel.app/" target="_blank" rel="noopener noreferrer" class="contact-link">Portfolio Link: horizonofkameshofficialportfolio.vercel.app</a>
+            </div>
+            <div class="contact-item">
+              <div class="icon">ℹ️</div>
+              <a href="https://www.linkedin.com/in/kamesh-sundaram/" target="_blank" rel="noopener noreferrer" class="contact-link">LinkedIn Profile: linkedin.com/in/kamesh-sundaram</a>
+            </div>
+            <div class="contact-item">
+              <div class="icon">⏰</div>
+              <span>Mon–Fri, 9am–6pm IST</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form fade-in">
+          <form id="contactForm">
+            
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="e.g. Riya Sharma" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="interest">Career Interest</label>
+              <input type="text" id="interest" name="interest" placeholder="e.g. Data Science, NLP, MLOps..." />
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" placeholder="Tell us about your background or what you'd like to know..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-btn" id="submit-btn">
+              ✉️ Send Message
+            </button>
+          </form>
+          <div id="formSuccess" style="display:none;margin-top:16px;padding:16px;background:rgba(34,197,94,0.1);border:1px solid rgba(34,197,94,0.2);border-radius:var(--radius-md);color:#22c55e;font-size:0.9rem;font-weight:500;">
+            ✅ Message sent! We'll get back to you within 24 hours.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          🧭 CareerAI
+        </div>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#careers">Careers</a></li>
+          <li><a href="#roadmaps">Roadmaps</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <p class="footer-copy">
+        © 2026 CareerAI — Helping students discover their path in tech. Built with ❤️ for the next generation of AI talent.
+      </p>
+      <center>
+        <p>This Webpage is for educational purposes only, and made as a project by an AI & Data Science Student</p>
+      </center>
+    </div>
+  </footer>
+  
+
+  <script src="quiz-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
