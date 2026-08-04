@@ -4,7 +4,7 @@
 
 AI Career Navigator is a fully responsive web app that helps students and early-career learners explore tech careers in AI & Data Science. Through an interactive quiz, personalized role recommendations, skill roadmaps, and curated learning resources, it guides users from "I don't know what I want to do" to "here's my next step."
 
-🔗 **Live Demo:** [Add your deployed link here]
+🔗 **Live Demo:** [https://careerai-guide.netlify.app/]
 
 ---
 
